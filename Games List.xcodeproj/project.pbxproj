@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,12 @@
 		0445FB27257938C30091B636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0445FB26257938C30091B636 /* Assets.xcassets */; };
 		0445FB2A257938C30091B636 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0445FB29257938C30091B636 /* Preview Assets.xcassets */; };
 		0445FB2D257938C30091B636 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445FB2B257938C30091B636 /* LaunchScreen.storyboard */; };
+		0445FB36257938ED0091B636 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 0445FB35257938ED0091B636 /* SwiftyJSON */; };
+		0445FB392579392F0091B636 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0445FB382579392F0091B636 /* SDWebImageSwiftUI */; };
+		0445FB3D257939F00091B636 /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FB3C257939F00091B636 /* Games.swift */; };
+		0445FB3F25793A830091B636 /* GamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FB3E25793A830091B636 /* GamesModel.swift */; };
+		04AFD11B257A47B2004F0A51 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFD11A257A47B2004F0A51 /* Detail.swift */; };
+		04AFD11F257A4F06004F0A51 /* Homes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFD11E257A4F06004F0A51 /* Homes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,10 @@
 		0445FB29257938C30091B636 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0445FB2C257938C30091B636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0445FB2E257938C30091B636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0445FB3C257939F00091B636 /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
+		0445FB3E25793A830091B636 /* GamesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesModel.swift; sourceTree = "<group>"; };
+		04AFD11A257A47B2004F0A51 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		04AFD11E257A4F06004F0A51 /* Homes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0445FB392579392F0091B636 /* SDWebImageSwiftUI in Frameworks */,
+				0445FB36257938ED0091B636 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +68,7 @@
 		0445FB1F257938C10091B636 /* Games List */ = {
 			isa = PBXGroup;
 			children = (
+				0445FB3C257939F00091B636 /* Games.swift */,
 				0445FB20257938C10091B636 /* AppDelegate.swift */,
 				0445FB22257938C10091B636 /* SceneDelegate.swift */,
 				0445FB24257938C10091B636 /* ContentView.swift */,
@@ -63,6 +76,9 @@
 				0445FB2B257938C30091B636 /* LaunchScreen.storyboard */,
 				0445FB2E257938C30091B636 /* Info.plist */,
 				0445FB28257938C30091B636 /* Preview Content */,
+				0445FB3E25793A830091B636 /* GamesModel.swift */,
+				04AFD11A257A47B2004F0A51 /* Detail.swift */,
+				04AFD11E257A4F06004F0A51 /* Homes.swift */,
 			);
 			path = "Games List";
 			sourceTree = "<group>";
@@ -91,6 +107,10 @@
 			dependencies = (
 			);
 			name = "Games List";
+			packageProductDependencies = (
+				0445FB35257938ED0091B636 /* SwiftyJSON */,
+				0445FB382579392F0091B636 /* SDWebImageSwiftUI */,
+			);
 			productName = "Games List";
 			productReference = 0445FB1D257938C10091B636 /* Games List.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +139,10 @@
 				Base,
 			);
 			mainGroup = 0445FB14257938C10091B636;
+			packageReferences = (
+				0445FB34257938ED0091B636 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				0445FB372579392F0091B636 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 0445FB1E257938C10091B636 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,9 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AFD11F257A4F06004F0A51 /* Homes.swift in Sources */,
 				0445FB21257938C10091B636 /* AppDelegate.swift in Sources */,
+				04AFD11B257A47B2004F0A51 /* Detail.swift in Sources */,
 				0445FB23257938C10091B636 /* SceneDelegate.swift in Sources */,
 				0445FB25257938C10091B636 /* ContentView.swift in Sources */,
+				0445FB3D257939F00091B636 /* Games.swift in Sources */,
+				0445FB3F25793A830091B636 /* GamesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +368,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0445FB34257938ED0091B636 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		0445FB372579392F0091B636 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0445FB35257938ED0091B636 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0445FB34257938ED0091B636 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		0445FB382579392F0091B636 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0445FB372579392F0091B636 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0445FB15257938C10091B636 /* Project object */;
 }
